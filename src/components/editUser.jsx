@@ -7,7 +7,7 @@ import { editUser, updateUser } from "../redux/user/userSlice";
 const EditUser = () => {
   const { id } = useParams();
   const { editData } = useSelector((state) => state.users);
-  const dispatch = useDispatch();
+  const dispatch =  useDispatch();
   const [userData, setUserData] = useState(null);
 
   const navigate = useNavigate();
