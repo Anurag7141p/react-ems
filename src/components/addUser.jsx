@@ -8,7 +8,7 @@ import { setAddUser } from "../redux/user/userSlice";
 // import { addUserSchema } from "../validation/yup";
 
 const AddUser = () => {
-  const [uploadImage, setUploadImage] = useState(null);
+  const [uploadImage, setUploadImage] =  useState(null);
   const [image, setImage] = useState(null);
   const [newId, setNewId] = useState(null);
   const { users } = useSelector((state) => state.users);
