@@ -6,6 +6,7 @@ import UserData from "./components/userData";
 import { Route, Routes } from "react-router-dom";
 import EditUser from "./components/editUser";
 import AddUser from "./components/addUser";
+import './App.css'
 
 const App = () => {
   const userApi = "https://reqres.in/api/users";
@@ -29,12 +30,11 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="montserrat-mono">
       <Routes>
         <Route path="/" element={<UserData />} />
         <Route path="/edit/:id" element={<EditUser />} />
         <Route path="/adduser" element={<AddUser />} />
-
       </Routes>
     </div>
   );
